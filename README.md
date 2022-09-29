@@ -1,5 +1,5 @@
 
-# Authortie-template <img src="./src/img/favicon/favicon.ico" alt="Logo of the project">
+# Britlex-template <img src="./src/img/favicon/favicon.ico" alt="Logo of the project">
 
 ![](https://img.shields.io/badge/Code-HTML5-%23E34F26?style=flat&logo=html5)
 ![](https://img.shields.io/badge/Code-Scss-%23CC6699?style=flat&logo=sass)
@@ -9,7 +9,7 @@
 ![](https://img.shields.io/badge/Tools-webpack.js-%238DD6F9?style=flat&logo=webpack)
 ![](https://img.shields.io/badge/Tools-Handlebars.js-%23000000?style=flat&logo=handlebarsdotjs)
 
-My implementation of the "Authortie" template based on a layout from the figma service.
+My implementation of the "Britlex" template based on a layout from the figma service.
 
 ## 🛠️ Technologies & Tools
 
@@ -25,7 +25,7 @@ My implementation of the "Authortie" template based on a layout from the figma s
 ### Formatting
 
 * Soft tabs (2 spaces)
-* kebab-case
+* camelCase
 
 ### OOCSS and BEM
 
