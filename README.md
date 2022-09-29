@@ -29,9 +29,9 @@ My implementation of the "Britlex" template based on a layout from the figma ser
 
 ### OOCSS and BEM
 
-* `.listing-card` — is the “block” and represents the higher-level component. Stores the structure.
-* `.listing-card__title` — is an “element” and represents a descendant of `.listing-card`. Stores the structure.
-* `.listing-card_featured` — is a “modifier” and represents a different state or variation on the `.listing-card` block. Stores state, behavior and design.
+* `.listingCard` — is the “block” and represents the higher-level component. Stores the structure.
+* `.listingCard__title` — is an “element” and represents a descendant of `.listing-card`. Stores the structure.
+* `.listingCard_featured` — is a “modifier” and represents a different state or variation on the `.listing-card` block. Stores state, behavior and design.
 
 ## 📂 Structure project
 
