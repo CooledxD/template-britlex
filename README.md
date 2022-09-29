@@ -1,5 +1,5 @@
 
-# Authortie-template <img src="./src/img/favicon/favicon-16x16.png" alt="Logo of the project">
+# Authortie-template <img src="./src/img/favicon/favicon.ico" alt="Logo of the project">
 
 ![](https://img.shields.io/badge/Code-HTML5-%23E34F26?style=flat&logo=html5)
 ![](https://img.shields.io/badge/Code-Scss-%23CC6699?style=flat&logo=sass)
