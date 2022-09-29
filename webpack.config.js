@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
@@ -35,7 +36,10 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: 'all'
-    }
+    },
+    minimizer: [
+      new CssMinimizerPlugin(),
+    ],
   },
 
   plugins: [
@@ -52,7 +56,12 @@ module.exports = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader', 
+          options: { url: false}
+          }, 
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|svg|jpe?g|gif|webp|ico)$/i,
