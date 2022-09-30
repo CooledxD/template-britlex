@@ -1,6 +1,9 @@
 // Mixins
 
-@mixin fontSize($fontSize, $lineHeight) {
+@mixin fontSize($fontSize) {
   font-size: calc($fontSize / 16) + rem;
+}
+
+@mixin lineHeight($lineHeight) {
   line-height: calc($lineHeight / 16) + rem;
 }

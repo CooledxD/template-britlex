@@ -2,20 +2,43 @@
 
 .btn {
   display: grid;
+  align-items: center;
   white-space: nowrap;
   text-align: center;
-  text-transform: capitalize;
+
+  &Header {
+    height: 70px;
+    width: 220px;
+  
+    border-width: 2px;
+  }
+  
+  &Hero {
+    height: 118px;
+    width: 438px;
+  
+    border-width: 0;
+  }
+
+}
+
+
+.btn_style {
   border-style: solid;
   border-radius: 5px;
 
-  &_white {
+  &White {
+    text-transform: capitalize;
     border-color: $colorDarkGreyBlue;
   }
-}
 
-.btnWhite {
-  height: 70px;
-  width: 220px;
+  &Black {
+    text-transform: none;
+    background-color: $colorBlack;
+  }
 
-  border-width: 2px;
+  &Hero {
+    border-radius: 15px;
+  }
+
 }

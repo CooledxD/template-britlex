@@ -1,0 +1,25 @@
+// Hero
+
+.hero {
+  padding-top: 58px;
+  padding-bottom: 58px;
+
+  &__leftParagraph {
+    margin-top: 38px;
+    margin-bottom: 59px;
+  }
+
+  &_leftBg {
+    background-image: url(../../img/hero/light-bulb.svg);
+    background-repeat: no-repeat;
+    background-position: top 20% right;
+  }
+
+  &_bg {
+    background-image: url(../../img/hero/learn-language.png);
+    background-repeat: no-repeat;
+    background-position: right 4% bottom 38%;
+  }
+
+}
+

@@ -1,23 +1,65 @@
 // Typography
 
-.poppinsRegular {
-  font-family: poppinsregular, sans-serif;
-  font-weight: 400;
+.poppins {
 
-  &_36 {
-    @include fontSize(36, 54);
+  &_regular {
+    font-family: poppinsregular, sans-serif;
+    font-weight: 400;
   }
-
-  &_24 {
-    @include fontSize(24, 70);
+  
+  &_medium {
+    font-family: poppinsmedium, sans-serif;
+    font-weight: 500;
+  }
+  
+  &_semibold {
+    font-family: poppinssemibold, sans-serif;
+    font-weight: 600;
   }
 }
 
-.poppinsMedium {
-  font-family: poppinsmedium, sans-serif;
-  font-weight: 500;
+// Font size
+
+.fontSize {
 
   &_20 {
-    @include fontSize(20, 30);
+    @include fontSize(20);
+  }
+
+  &_24 {
+    @include fontSize(24);
+  }
+
+  &_36 {
+    @include fontSize(36);
+  }
+
+  &_64 {
+    @include fontSize(64);
+  }
+}
+
+// Line height
+
+.lineHeight {
+
+  &_30 {
+    @include lineHeight(30);
+  }
+
+  &_36 {
+    @include lineHeight(36);
+  }
+
+  &_54 {
+    @include lineHeight(54);
+  }
+
+  &_70 {
+    @include lineHeight(70);
+  }
+
+  &_80 {
+    @include lineHeight(80);
   }
 }

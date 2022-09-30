@@ -6,11 +6,19 @@
     color: $colorBlack;
   }
 
+  &_white {
+    color: $colorWhite;
+  }
+
   &_paleBlue {
     color: $colorPaleBlue;
   }
-  
+
   &_darkGreyBlue {
     color: $colorDarkGreyBlue;
+  }
+
+  &_manatee {
+    color: $colorManatee;
   }
 }
