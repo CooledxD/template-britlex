@@ -1,0 +1,23 @@
+// Typography
+
+.poppinsRegular {
+  font-family: poppinsregular, sans-serif;
+  font-weight: 400;
+
+  &_36 {
+    @include fontSize(36, 54);
+  }
+
+  &_24 {
+    @include fontSize(24, 70);
+  }
+}
+
+.poppinsMedium {
+  font-family: poppinsmedium, sans-serif;
+  font-weight: 500;
+
+  &_20 {
+    @include fontSize(20, 30);
+  }
+}

@@ -1,0 +1,12 @@
+// Display
+
+.display {
+
+  &_grid {
+    display: grid;
+  }
+
+  &_none {
+    display: none;
+  }
+}

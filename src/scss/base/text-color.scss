@@ -1,0 +1,16 @@
+// TextColor
+
+.text {
+
+  &_black {
+    color: $colorBlack;
+  }
+
+  &_paleBlue {
+    color: $colorPaleBlue;
+  }
+  
+  &_darkGreyBlue {
+    color: $colorDarkGreyBlue;
+  }
+}
