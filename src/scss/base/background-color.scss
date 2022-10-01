@@ -1,0 +1,12 @@
+// Background color
+
+.bg {
+
+  &_black {
+    background-color: $colorBlack;
+  }
+
+  &_smokyWhite {
+    background-color: $colorSmokyWhite;
+  }
+}

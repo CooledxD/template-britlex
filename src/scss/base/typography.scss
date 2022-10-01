@@ -22,6 +22,14 @@
 
 .fontSize {
 
+  &_16 {
+    @include fontSize(16);
+  }
+
+  &_18 {
+    @include fontSize(18);
+  }
+
   &_20 {
     @include fontSize(20);
   }
@@ -30,8 +38,16 @@
     @include fontSize(24);
   }
 
+  &_30 {
+    @include fontSize(30);
+  }
+
   &_36 {
     @include fontSize(36);
+  }
+
+  &_48 {
+    @include fontSize(48);
   }
 
   &_64 {
@@ -43,6 +59,18 @@
 
 .lineHeight {
 
+  &_24 {
+    @include lineHeight(24);
+  }
+
+  &_26 {
+    @include lineHeight(26);
+  }
+
+  &_27 {
+    @include lineHeight(27);
+  }
+
   &_30 {
     @include lineHeight(30);
   }
@@ -51,8 +79,16 @@
     @include lineHeight(36);
   }
 
+  &_40 {
+    @include lineHeight(40);
+  }
+
   &_54 {
     @include lineHeight(54);
+  }
+
+  &_60 {
+    @include lineHeight(60);
   }
 
   &_70 {

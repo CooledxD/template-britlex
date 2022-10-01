@@ -65,7 +65,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g|gif|webp|ico)$/i,
-        type: 'asset/resource'
+        type: 'asset/inline'
       },
       {
         test: /\.woff2$/i,
@@ -76,7 +76,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.hbs$/,
+        test: /\.hbs$/i,
         loader: 'handlebars-loader',
         options: {
           knownHelpersOnly: false,

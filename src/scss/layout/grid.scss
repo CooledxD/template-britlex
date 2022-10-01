@@ -20,7 +20,7 @@
   grid-column-end: span 3;
 }
 
-.col-4 {
+.col_4 {
   grid-column-end: span 4;
 }
 
@@ -36,7 +36,7 @@
   grid-column-end: span 7;
 }
 
-.col-8 {
+.col_8 {
   grid-column-end: span 8;
 }
 
@@ -70,7 +70,7 @@
   grid-column-start: 4;
 }
 
-.col-start-5 {
+.colStart_5 {
   grid-column-start: 5;
 }
 
@@ -86,7 +86,7 @@
   grid-column-start: 8;
 }
 
-.col-start-9 {
+.colStart_9 {
   grid-column-start: 9;
 }
 
@@ -102,17 +102,31 @@
   grid-column-start: 12;
 }
 
+/* Row span */
+
+.row_2 {
+  grid-row-end: span 2;
+}
+
+.row_3 {
+  grid-row-end: span 3;
+}
+
+.row_5 {
+  grid-row-end: span 5;
+}
+
 /* Justify self */
 
-.justify-self-end {
+.justifSelfEnd {
   justify-self: end;
 }
 
-.justify-self-start {
+.justifySelfStart {
   justify-self: start;
 }
 
-.justify-self-center {
+.justifySelfCenter {
   justify-self: center;
 }
 
