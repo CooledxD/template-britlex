@@ -1,0 +1,47 @@
+.aboutUs {
+  padding-top: 150px;
+  padding-bottom: 229px;
+
+  background-image: url(../../img/about-us/business-competition.png);
+  background-position: right 3% top 40%;
+
+  &_bg {
+    background-repeat: no-repeat;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__leftParagraph {
+    padding-top: 20px;
+    padding-bottom: 55px;
+  }
+
+  &__itemStatistics {
+    display: block;
+    padding-bottom: 10px;
+
+    @include fontSize(48);
+    @include lineHeight(50);
+  }
+
+  &_itemStatistics {
+    font-family: poppinssemibold, sans-serif;
+    font-weight: 600;
+    color: $colorDarkGreyBlueV2;
+  }
+
+  &__itemStatisticsText {
+    display: block;
+
+    @include fontSize(20);
+    @include lineHeight(30);
+  }
+
+  &_itemStatisticsText {
+    font-family: poppinsregular, sans-serif;
+    font-weight: 400;
+    color: $colorManatee;
+  }
+}
