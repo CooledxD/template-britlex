@@ -23,6 +23,11 @@
     width: 230px;
   }
 
+  &Sub {
+    height: 80px;
+    width: 264px;
+  }
+
 }
 
 
@@ -42,6 +47,10 @@
 
   &Hero {
     border-radius: 15px;
+  }
+
+  &Sub {
+    border-radius: 10px;
   }
 
 }

@@ -1,0 +1,40 @@
+.contactUs {
+  padding-top: 260px;
+  padding-bottom: 240px;
+
+  background-image: url(../../img/contact-us/contact-us.png);
+  background-position: top 55% left;
+
+  &__paragraph {
+    padding-top: 37px;
+    padding-bottom: 50px;
+  }
+
+  &_bg {
+    background-repeat: no-repeat;
+  }
+}
+
+.formSub {
+  padding-right: 30px;
+
+  &__input {
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    width: 450px;
+  
+    &::placeholder {
+      @include fontSize(16);
+      @include lineHeight(24);
+      color: $colorManatee;
+  
+    }
+  }
+
+  &_input {
+    border: 1px solid $colorManatee;
+    border-radius: 10px;
+  }
+}
