@@ -1,0 +1,94 @@
+.pricing {
+
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  &__itemTitle {
+    @include fontSize(30);
+    @include lineHeight(48);
+  }
+
+  &_itemTitle {
+    font-family: poppinssemibold, sans-serif;
+    font-weight: 600;
+    color: $colorDarkGreyBlue;
+  }
+
+  &__itemParagraph {
+    @include fontSize(20);
+    @include lineHeight(30);
+  }
+
+  &_itemParagraph {
+    font-family: poppinsregular, sans-serif;
+    font-weight: 400;
+    color: $colorManatee;
+  }
+
+  &__itemPrice {
+    text-align: center;
+    @include fontSize(30);
+    @include lineHeight(45);
+
+    width: 240px;
+    height: 45px;
+  }
+
+  &_itemPrice {
+    font-family: poppinsregular, sans-serif;
+    font-weight: 400;
+    color: $colorDarkGreyBlue;
+
+    background-color: $colorHoneyDew;
+  }
+
+  &__itemPriceText {
+    @include fontSize(18);
+    @include lineHeight(45);
+    padding-left: 12px;
+  }
+
+  &_itemPrice {
+    color: $colorCader;
+  }
+
+  &__item {
+    padding-top: 343px;
+  }
+
+  &_item {
+    background-repeat: no-repeat;
+  }
+
+  &__item:nth-child(1) {
+    background-image: url(../../img/pricing/online-test.png);
+    background-position: right 50% top;
+
+    & .pricing__itemParagraph {
+      padding-top: 19px;
+      padding-bottom: 27px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    background-image: url(../../img/pricing/lesson.png);
+    background-position: right 50% top 12%;
+
+    & .pricing__itemParagraph {
+      padding-top: 19px;
+      padding-bottom: 57px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    background-image: url(../../img/pricing/webinar.png);
+    background-position: right 50% top 4%;
+
+    & .pricing__itemParagraph {
+      padding-top: 19px;
+      padding-bottom: 57px;
+    }
+  }
+}
