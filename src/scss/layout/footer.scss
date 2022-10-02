@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 63px;
+
+  border-top-width: 1px;
+
+  &_style {
+    border-style: solid;
+    border-color: #C4C4C4;
+  }
+
+  &__navItem:nth-child(2n) {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
