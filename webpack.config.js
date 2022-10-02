@@ -56,16 +56,11 @@ module.exports = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/i,
-        use: [MiniCssExtractPlugin.loader, {
-          loader: 'css-loader', 
-          options: { url: false}
-          }, 
-          'sass-loader'
-        ]
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'resolve-url-loader', 'sass-loader']
       },
       {
         test: /\.(png|svg|jpe?g|gif|webp|ico)$/i,
-        type: 'asset/inline'
+        type: 'asset/resource'
       },
       {
         test: /\.woff2$/i,
