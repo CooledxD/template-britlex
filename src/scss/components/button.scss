@@ -3,7 +3,6 @@
 .btn {
   display: grid;
   align-items: center;
-  white-space: nowrap;
   text-align: center;
 
   &Header {
@@ -11,46 +10,63 @@
     width: 220px;
   
     border-width: 2px;
+
+    @include fontSize(24);
+    @include lineHeight(70);
   }
   
   &Hero {
     height: 118px;
     width: 438px;
+
+    @include fontSize(36);
+    @include lineHeight(54);
   }
 
   &Skills {
     height: 60px;
     width: 230px;
+
+    @include fontSize(18);
+    @include lineHeight(26);
   }
 
   &Sub {
     height: 80px;
     width: 264px;
-  }
 
+    @include fontSize(20);
+    @include lineHeight(30);
+  }
 }
 
+// Button style
 
 .btn_style {
   border-style: solid;
   border-radius: 5px;
+  background-color: $colorBlack;
 
-  &White {
-    text-transform: capitalize;
+  text-transform: none;
+  color: $colorWhite;
+  @include poppins(500);
+
+  &Header {
     border-color: $colorDarkGreyBlue;
-  }
+    background-color: $colorWhite;
 
-  &Black {
-    text-transform: none;
-    background-color: $colorBlack;
+    color: $colorBlack;
+    text-transform: capitalize;
+    @include poppins(400);
   }
 
   &Hero {
     border-radius: 15px;
+
+    @include poppins(400);
   }
 
   &Sub {
     border-radius: 10px;
   }
-
 }

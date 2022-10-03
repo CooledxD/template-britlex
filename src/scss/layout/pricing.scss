@@ -24,8 +24,7 @@
   }
 
   &_itemPrice {
-    font-family: poppinsregular, sans-serif;
-    font-weight: 400;
+    @include poppins(400);
     color: $colorDarkGreyBlue;
 
     background-color: $colorHoneyDew;

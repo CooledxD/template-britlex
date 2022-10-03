@@ -23,8 +23,7 @@
   }
 
   &_itemStatistics {
-    font-family: poppinssemibold, sans-serif;
-    font-weight: 600;
+    @include poppins(600);
     color: $colorDarkGreyBlueV2;
   }
 
@@ -36,8 +35,7 @@
   }
 
   &_itemStatisticsText {
-    font-family: poppinsregular, sans-serif;
-    font-weight: 400;
+    @include poppins(400);
     color: $colorManatee;
   }
 }

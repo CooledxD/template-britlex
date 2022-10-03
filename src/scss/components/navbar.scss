@@ -11,6 +11,5 @@
   grid-auto-flow: column;
   justify-content: space-between;
 
-  font-family: poppinsmedium, sans-serif;
-  font-weight: 500;
+  @include poppins(500);
 }

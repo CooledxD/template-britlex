@@ -1,9 +1,28 @@
 // Mixins
 
+// Font size
+
 @mixin fontSize($fontSize) {
   font-size: calc($fontSize / 16) + rem;
 }
 
+// Line height
+
 @mixin lineHeight($lineHeight) {
   line-height: calc($lineHeight / 16) + rem;
+}
+
+// Typography
+
+@mixin poppins($width) {
+  @if ($width == 400) {
+    font-family: poppinsregular, sans-serif;
+    font-weight: 400;
+  } @else if ($width == 500) {
+    font-family: poppinsmedium, sans-serif;
+    font-weight: 500;
+  } @else if ($width == 600) {
+    font-family: poppinssemibold, sans-serif;
+    font-weight: 600;
+  }
 }
