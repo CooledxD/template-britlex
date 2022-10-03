@@ -1,11 +1,31 @@
 // Base
 
+* {
+  background-repeat: no-repeat;
+}
+
 a,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   text-transform: capitalize;
+  white-space: nowrap;
+}
+
+h1,
+h2,
+h3 {
+  color: $colorBlack;
+  font-family: poppinssemibold, sans-serif;
+  font-weight: 600;
+  @include lineHeight(80);
+  @include fontSize(48);
+}
+
+p {
+  font-family: poppinsregular, sans-serif;
+  font-weight: 400;
+  color: $colorManatee;
+  @include fontSize(20);
+  @include lineHeight(30);
 }

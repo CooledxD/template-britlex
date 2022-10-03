@@ -15,7 +15,6 @@
 @import './base/typography.scss';
 @import './base/text-color.scss';
 @import './base/display.scss';
-@import './base/background-color.scss';
 
 /* Layout */
 
@@ -31,6 +30,8 @@
 /* Componets */
 
 @import './components/button.scss';
+@import './components/navbar.scss';
+@import './components/site-name.scss';
 
 /* Themes */
 

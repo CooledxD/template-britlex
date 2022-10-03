@@ -9,10 +9,6 @@
     padding-top: 37px;
     padding-bottom: 50px;
   }
-
-  &_bg {
-    background-repeat: no-repeat;
-  }
 }
 
 .formSub {
@@ -24,6 +20,7 @@
     padding-top: 29px;
     padding-bottom: 29px;
     width: 450px;
+    border-width: 1px;
   
     &::placeholder {
       @include fontSize(16);
@@ -34,7 +31,8 @@
   }
 
   &_input {
-    border: 1px solid $colorManatee;
+    border-style: solid;
+    border-color: $colorManatee;
     border-radius: 10px;
   }
 }

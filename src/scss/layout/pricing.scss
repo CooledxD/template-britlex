@@ -11,20 +11,7 @@
   }
 
   &_itemTitle {
-    font-family: poppinssemibold, sans-serif;
-    font-weight: 600;
     color: $colorDarkGreyBlue;
-  }
-
-  &__itemParagraph {
-    @include fontSize(20);
-    @include lineHeight(30);
-  }
-
-  &_itemParagraph {
-    font-family: poppinsregular, sans-serif;
-    font-weight: 400;
-    color: $colorManatee;
   }
 
   &__itemPrice {
@@ -56,10 +43,6 @@
 
   &__item {
     padding-top: 343px;
-  }
-
-  &_item {
-    background-repeat: no-repeat;
   }
 
   &__item:nth-child(1) {

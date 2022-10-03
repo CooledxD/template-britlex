@@ -1,0 +1,12 @@
+.siteName {
+  font-family: poppinsregular, sans-serif;
+  font-weight: 400;
+
+  @include fontSize(36);
+  @include lineHeight(54);
+  color: $colorBlack;
+
+  &__lex {
+    color: $colorPaleBlue;
+  }
+}
