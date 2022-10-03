@@ -2,7 +2,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat($templateColumns, minmax(max-content, 1fr));
+  grid-template-columns: repeat($templateColumns, minmax(0, 1fr));
   gap: $gap;
 }
 
