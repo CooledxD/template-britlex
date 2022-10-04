@@ -11,20 +11,3 @@
     padding-bottom: 50px;
   }
 }
-
-.formSub {
-
-  &__input {
-    padding-right: 33px;
-    padding-left: 33px;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    margin-right: 8px;
-    width: 450px;
-    border-width: 1px;
-
-    @include fontSize(16);
-    @include lineHeight(24);
-  }
-
-}

@@ -6,6 +6,7 @@
 
 @import './abstracts/variables.scss';
 @import './abstracts/mixins.scss';
+@import './abstracts/functions.scss';
 
 /* Base */
 
@@ -31,9 +32,12 @@
 @import './components/button.scss';
 @import './components/navbar.scss';
 @import './components/site-name.scss';
+@import './components/form-subscribe.scss';
 
 /* Themes */
 
 @import './themes/defualt-theme.scss';
 
 /* Media-quaries */
+
+@import './layout/media-queries.scss';

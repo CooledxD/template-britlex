@@ -154,3 +154,17 @@
     }
   }
 }
+
+// Site name
+
+.siteName {
+
+  &_style {
+    @include poppins(400);
+    color: $colorBlack;
+  }
+
+  &_styleLex {
+    color: $colorPaleBlue;
+  }
+}

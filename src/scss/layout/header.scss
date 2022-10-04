@@ -1,8 +1,11 @@
 .header {
   padding-top: 51px;
   padding-bottom: 51px;
-}
 
-.header__nav {
-  width: 57vmin;
+  &__nav {
+    width: 57vmin;
+
+    @include fontSize(20);
+    @include lineHeight(30);
+  }
 }

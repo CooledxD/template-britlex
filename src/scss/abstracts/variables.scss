@@ -20,3 +20,12 @@ $containerPaddings: 10px;
 
 $templateColumns: 12;
 $gap: 30px;
+
+// Media queries
+
+$breakpoint: (
+  xs: 320px, 
+  sm: 575px, 
+  md: 767px, 
+  lg: 992px
+);

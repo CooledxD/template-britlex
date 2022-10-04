@@ -1,0 +1,44 @@
+@media (max-width: breakpoint(lg) ) {
+
+  // Variables
+
+  $containerWidth: 930px;
+
+  // Container
+
+  .container {
+    max-width: calc($containerWidth + $containerPaddings * 2);
+  }
+
+  // Site name
+
+  .siteName {
+    @include fontSize(30);
+    @include lineHeight(45);
+  }
+
+  // Header
+
+  .header {
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &__nav {
+      width: 58vmin;
+
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+  }
+
+  // Button
+
+  .btnHeader {
+    width: 160px;
+    height: 50px;
+
+    @include fontSize(18);
+    @include lineHeight(27);
+  }
+
+}
