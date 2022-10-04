@@ -12,10 +12,6 @@
     @include lineHeight(40);
   }
 
-  &_itemTitle {
-    color: $colorDarkGreyBlue;
-  }
-
   &__itemParagraph {
     @include fontSize(16);
     @include lineHeight(24);
@@ -95,10 +91,4 @@
       }
     }
   }
-
-  &_item {
-    border-radius: 10px;
-    background-color: $colorSmokyWhite;
-  }
-
 }

@@ -39,34 +39,3 @@
     @include lineHeight(30);
   }
 }
-
-// Button style
-
-.btn_style {
-  border-style: solid;
-  border-radius: 5px;
-  background-color: $colorBlack;
-
-  text-transform: none;
-  color: $colorWhite;
-  @include poppins(500);
-
-  &Header {
-    border-color: $colorDarkGreyBlue;
-    background-color: $colorWhite;
-
-    color: $colorBlack;
-    text-transform: capitalize;
-    @include poppins(400);
-  }
-
-  &Hero {
-    border-radius: 15px;
-
-    @include poppins(400);
-  }
-
-  &Sub {
-    border-radius: 10px;
-  }
-}

@@ -10,10 +10,6 @@
     @include lineHeight(48);
   }
 
-  &_itemTitle {
-    color: $colorDarkGreyBlue;
-  }
-
   &__itemPrice {
     text-align: center;
     @include fontSize(30);
@@ -23,21 +19,10 @@
     height: 45px;
   }
 
-  &_itemPrice {
-    @include poppins(400);
-    color: $colorDarkGreyBlue;
-
-    background-color: $colorHoneyDew;
-  }
-
   &__itemPriceText {
     @include fontSize(18);
     @include lineHeight(45);
     padding-left: 12px;
-  }
-
-  &_itemPrice {
-    color: $colorCader;
   }
 
   &__item {

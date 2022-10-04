@@ -1,4 +1,5 @@
 .contactUs {
+
   padding-top: 260px;
   padding-bottom: 220px;
 
@@ -12,27 +13,18 @@
 }
 
 .formSub {
-  padding-right: 30px;
 
   &__input {
     padding-right: 33px;
     padding-left: 33px;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-right: 8px;
     width: 450px;
     border-width: 1px;
-  
-    &::placeholder {
-      @include fontSize(16);
-      @include lineHeight(24);
-      color: $colorManatee;
-  
-    }
+
+    @include fontSize(16);
+    @include lineHeight(24);
   }
 
-  &_input {
-    border-style: solid;
-    border-color: $colorManatee;
-    border-radius: 10px;
-  }
 }

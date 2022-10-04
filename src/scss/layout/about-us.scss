@@ -22,20 +22,10 @@
     @include lineHeight(50);
   }
 
-  &_itemStatistics {
-    @include poppins(600);
-    color: $colorDarkGreyBlueV2;
-  }
-
   &__itemStatisticsText {
     display: block;
 
     @include fontSize(20);
     @include lineHeight(30);
-  }
-
-  &_itemStatisticsText {
-    @include poppins(400);
-    color: $colorManatee;
   }
 }

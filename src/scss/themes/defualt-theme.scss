@@ -1,0 +1,156 @@
+// Typography
+
+.poppins {
+
+  &_regular {
+    font-family: poppinsregular, sans-serif;
+    font-weight: 400;
+  }
+  
+  &_medium {
+    font-family: poppinsmedium, sans-serif;
+    font-weight: 500;
+  }
+  
+  &_semibold {
+    font-family: poppinssemibold, sans-serif;
+    font-weight: 600;
+  }
+}
+
+// TextColor
+
+.text {
+
+  &_black {
+    color: $colorBlack;
+  }
+
+  &_white {
+    color: $colorWhite;
+  }
+
+  &_paleBlue {
+    color: $colorPaleBlue;
+  }
+
+  &_darkGreyBlue {
+    color: $colorDarkGreyBlue;
+  }
+
+  &_manatee {
+    color: $colorManatee;
+  }
+}
+
+// Button style
+
+.btn_style {
+  border-style: solid;
+  border-radius: 5px;
+  background-color: $colorBlack;
+
+  text-transform: none;
+  color: $colorWhite;
+  @include poppins(500);
+
+  &Header {
+    border-color: $colorDarkGreyBlue;
+    background-color: $colorWhite;
+
+    color: $colorBlack;
+    text-transform: capitalize;
+    @include poppins(400);
+  }
+
+  &Hero {
+    border-radius: 15px;
+
+    @include poppins(400);
+  }
+
+  &Sub {
+    border-radius: 10px;
+    background-color: $colorDarkGreyBlue
+  }
+}
+
+// Hero
+
+.hero {
+
+  &_leftBg {
+    background-image: url(../../img/hero/light-bulb.svg);
+    background-position: top 20% right;
+  }
+
+  &_bg {
+    background-image: url(../../img/hero/learn-language.png);
+    background-position: right 4% bottom 38%;
+  }
+}
+
+// Skills
+
+.skills {
+
+  &_itemTitle {
+    color: $colorDarkGreyBlue;
+  }
+
+  &_item {
+    border-radius: 10px;
+    background-color: $colorSmokyWhite;
+  }
+}
+
+// About us
+
+.aboutUs {
+
+  &_itemStatistics {
+    @include poppins(600);
+    color: $colorDarkGreyBlueV2;
+  }
+
+  &_itemStatisticsText {
+    @include poppins(400);
+    color: $colorManatee;
+  }
+}
+
+// Pricing
+
+.pricing {
+
+  &_itemTitle {
+    color: $colorDarkGreyBlue;
+  }
+
+  &_itemPrice {
+    @include poppins(400);
+    color: $colorDarkGreyBlue;
+
+    background-color: $colorHoneyDew;
+  }
+
+  &_itemPrice {
+    color: $colorCader;
+  }
+}
+
+// Form subscribe
+
+.formSub {
+
+  &_input {
+    border-style: solid;
+    border-color: $colorManatee;
+    border-radius: 10px;
+
+    &::placeholder {
+      @include poppins(400);
+      color: $colorManatee;
+    }
+  }
+}
