@@ -324,4 +324,21 @@
     }
   }
 
+  // Footer
+
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 22px;
+
+    &__nav {
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+
+    &__navItem:nth-child(2n) {
+      padding-right: 3px;
+      padding-left: 3px;
+    }
+  }
+
 }

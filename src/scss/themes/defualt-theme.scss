@@ -138,6 +138,16 @@
   }
 }
 
+// Footer
+
+.footer {
+
+  &_style {
+    border-style: solid;
+    border-color: $colorSilverCrayola;
+  }
+}
+
 // Site name
 
 .siteName {

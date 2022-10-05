@@ -4,9 +4,9 @@
 
   border-top-width: 1px;
 
-  &_style {
-    border-style: solid;
-    border-color: $colorSilverCrayola;
+  &__nav {
+    @include fontSize(24);
+    @include lineHeight(36);
   }
 
   &__navItem:nth-child(2n) {
