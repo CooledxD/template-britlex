@@ -15,11 +15,13 @@
   &__itemParagraph {
     @include fontSize(16);
     @include lineHeight(24);
+
+    max-width: 376px;
   }
 
   &__item {
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 25px;
 
     &:nth-child(1) {
@@ -46,7 +48,7 @@
       padding-top: 278px;
 
       background-image: url(../../img/skills/typewriter.png);
-      background-position: top 10% right 17%;
+      background-position: top 10% right 18%;
 
       & .skills__itemTitle {
         padding-bottom: 3px;
@@ -64,11 +66,11 @@
       background-position: top 5% left 25%;
 
       & .skills__itemTitle {
-        padding-bottom: 2px;
+        padding-bottom: 3px;
       }
 
       & .skills__itemParagraph {
-        padding-bottom: 9px;
+        padding-bottom: 32px;
       }
     }
 
@@ -79,7 +81,6 @@
       background-position: bottom 43% right 10%;
 
       & .skills__itemTitle {
-        padding-top: 0;
         padding-bottom: 32px;
       }
 

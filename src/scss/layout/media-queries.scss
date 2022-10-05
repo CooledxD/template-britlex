@@ -63,6 +63,11 @@
       @include fontSize(24);
       @include lineHeight(36);
     }
+
+    &Skills {
+      width: 196px;
+      height: 57px;
+    }
   }
 
 
@@ -104,6 +109,83 @@
     &__container {
       padding-top: 20px;
       padding-bottom: 20px;
+    }
+
+    &__itemTitle {
+      @include fontSize(22);
+    }
+
+    &__itemParagraph {
+      @include fontSize(13);
+      @include lineHeight(20);
+      max-width: 236px;
+    }
+
+    &__item {
+
+      &:nth-child(1) {
+        padding-top: 260px;
+
+        background-position: top 6% left 63%;
+        background-size: 235px 209px;
+
+        & .skills__itemTitle{
+          padding-bottom: 16px;
+        }
+
+        & .skills__itemDivider {
+          height: 20px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 98px;
+        }
+      }
+
+      &:nth-child(2) {
+        padding-top: 190px;
+
+        background-position: top 12% right 8%;
+        background-size: 190px 160px;
+
+        & .skills__itemTitle {
+          padding-bottom: 0;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 13px;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 190px;
+
+        background-position: top 10% left 25%;
+        background-size: 185px 150px;
+
+        & .skills__itemTitle {
+          padding-bottom: 0;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 13px;
+        }
+      }
+
+      &:nth-child(4) {
+        padding-top: 29px;
+
+        background-position: bottom 47% right 8%;
+        background-size: 225px 142px;
+        
+        & .skills__itemTitle {
+          padding-bottom: 15px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 15px;
+        }
+      }
     }
 
   }
