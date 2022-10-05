@@ -5,9 +5,19 @@
     padding-bottom: 34px;
   }
 
+  &__item {
+    padding-top: 343px;
+  }
+
   &__itemTitle {
     @include fontSize(30);
     @include lineHeight(48);
+  }
+
+  &__itemParagraph {
+    padding-top: 19px;
+
+    max-width: 426px;
   }
 
   &__itemPrice {
@@ -25,16 +35,11 @@
     padding-left: 12px;
   }
 
-  &__item {
-    padding-top: 343px;
-  }
-
   &__item:nth-child(1) {
     background-image: url(../../img/pricing/online-test.png);
     background-position: right 50% top;
 
     & .pricing__itemParagraph {
-      padding-top: 19px;
       padding-bottom: 27px;
     }
   }
@@ -44,7 +49,6 @@
     background-position: right 50% top 12%;
 
     & .pricing__itemParagraph {
-      padding-top: 19px;
       padding-bottom: 57px;
     }
   }
@@ -54,7 +58,6 @@
     background-position: right 50% top 4%;
 
     & .pricing__itemParagraph {
-      padding-top: 19px;
       padding-bottom: 57px;
     }
   }

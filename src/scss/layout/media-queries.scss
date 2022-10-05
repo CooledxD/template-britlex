@@ -194,8 +194,9 @@
 
   .aboutUs {
     padding-top: 62px;
+    padding-bottom: 125px;
 
-    background-position: right 1% top 32%;
+    background-position: right 1% top 46%;
     background-size: 325px 294px;
 
     &__paragraph {
@@ -215,6 +216,72 @@
       @include fontSize(16);
       @include lineHeight(24);
     }
+  }
+
+  // Pricing
+
+  .pricing {
+
+    &__container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__item {
+      padding-top: 234px;
+    }
+
+    &__itemTitle {
+      @include fontSize(22);
+      @include lineHeight(34);
+    }
+
+    &__itemParagraph {
+      padding-top: 14px;
+
+      max-width: 280px;
+    }
+
+    &__itemPrice {
+      @include fontSize(24);
+      @include lineHeight(45);
+  
+      width: 205px;
+      height: 45px;
+    }
+
+    &__itemPriceText {
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+
+    &__item:nth-child(1) {
+      background-position: left 25% top;
+      background-size: 204px 204px;
+  
+      & .pricing__itemParagraph {
+        padding-bottom: 5px;
+      }
+    }
+
+    &__item:nth-child(2) {
+      background-position: left 7% top 13%;
+      background-size: 260px 165px;
+
+      & .pricing__itemParagraph {
+        padding-bottom: 53px;
+      }
+    }
+
+    &__item:nth-child(3) {
+      background-position: left 36% top;
+      background-size: 230px 205px;
+
+      & .pricing__itemParagraph {
+        padding-bottom: 53px;
+      }
+    }
+
   }
 
 }
