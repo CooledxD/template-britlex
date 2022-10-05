@@ -190,4 +190,31 @@
 
   }
 
+  // About us
+
+  .aboutUs {
+    padding-top: 62px;
+
+    background-position: right 1% top 32%;
+    background-size: 325px 294px;
+
+    &__paragraph {
+      padding-top: 12px;
+      padding-bottom: 4px;
+
+      max-width: 440px;
+    }
+
+    &__itemStatistics {
+      padding-bottom: 3px;
+  
+      @include fontSize(30);
+    }
+  
+    &__itemStatisticsText {
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+  }
+
 }

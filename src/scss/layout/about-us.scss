@@ -9,9 +9,11 @@
     text-align: center;
   }
 
-  &__leftParagraph {
+  &__paragraph {
     padding-top: 20px;
     padding-bottom: 55px;
+
+    max-width: 640px;
   }
 
   &__itemStatistics {
