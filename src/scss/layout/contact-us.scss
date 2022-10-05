@@ -1,13 +1,14 @@
 .contactUs {
-
   padding-top: 264px;
   padding-bottom: 220px;
 
   background-image: url(../../img/contact-us/contact-us.png);
-  background-position: top 58% left;
+  background-position: top 58% left 2%;
 
   &__paragraph {
     padding-top: 34px;
     padding-bottom: 51px;
+
+    max-width: 760px;
   }
 }

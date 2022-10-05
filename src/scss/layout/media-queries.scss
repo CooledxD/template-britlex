@@ -68,6 +68,14 @@
       width: 196px;
       height: 57px;
     }
+
+    &Sub {
+      height: 60px;
+      width: 193px;
+  
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
   }
 
 
@@ -281,7 +289,39 @@
         padding-bottom: 53px;
       }
     }
+  }
 
+  // Contact us
+
+  .contactUs {
+    padding-top: 137px;
+    padding-bottom: 194px;
+
+    background-position: top 44% left 2%;
+    background-size: 300px 260px;
+
+    &__paragraph {
+      padding-top: 2px;
+      padding-bottom: 33px;
+  
+      max-width: 450px;
+    }
+  }
+
+  // Form subscribe
+
+  .formSub {
+
+    &__input {
+      padding-right: 37px;
+      padding-left: 37px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      width: 323px;
+  
+      @include fontSize(14);
+      @include lineHeight(21);
+    }
   }
 
 }
