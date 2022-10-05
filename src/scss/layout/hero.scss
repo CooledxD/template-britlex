@@ -4,8 +4,23 @@
   padding-top: 58px;
   padding-bottom: 58px;
 
-  &__leftParagraph {
-    margin-top: 38px;
-    margin-bottom: 59px;
+  background-image: url(../../img/hero/learn-language.png);
+  background-position: right 4% bottom 38%;
+
+  &__container {
+    background-image: url(../../img/hero/light-bulb.svg);
+    background-position: top 20% right;
+  }
+
+  &__title {
+    @include fontSize(64);
+  }
+
+  &__paragraph {
+    padding-top: 38px;
+    padding-bottom: 59px;
+
+    @include fontSize(24);
+    @include lineHeight(36)
   }
 }

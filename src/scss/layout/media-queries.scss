@@ -24,7 +24,7 @@
     padding-bottom: 31px;
 
     &__nav {
-      width: 58vmin;
+      width: 57vmin;
 
       @include fontSize(16);
       @include lineHeight(24);
@@ -33,12 +33,53 @@
 
   // Button
 
-  .btnHeader {
-    width: 160px;
-    height: 50px;
+  .btn {
 
-    @include fontSize(18);
-    @include lineHeight(27);
+    &Header {
+      width: 160px;
+      height: 50px;
+  
+      @include fontSize(18);
+      @include lineHeight(27);
+    }
+
+    &Hero {
+      width: 292px;
+      height: 80px;
+
+      @include fontSize(24);
+      @include lineHeight(36);
+    }
+  }
+
+
+  // Hero
+
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    background-size: 430px 340px;
+    background-position: right 3% bottom 36%;
+
+    &__container {
+      background-size: 80px 80px;
+      background-position: top 25% right -4%;
+    }
+
+    &__title {
+      @include fontSize(48);
+      @include lineHeight(64);
+    }
+
+    &__paragraph {
+      padding-top: 24px;
+      padding-bottom: 32px;
+      margin-right: -50px;
+
+      @include fontSize(20);
+      @include lineHeight(30);
+    }
   }
 
 }
