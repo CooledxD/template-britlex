@@ -10,6 +10,19 @@
     max-width: calc($containerWidth + $containerPaddings * 2);
   }
 
+  // Base
+
+  h1,
+  h2,
+  h3 {
+    @include fontSize(36);
+  }
+
+  p {
+    @include fontSize(16);
+    @include lineHeight(24);
+  }
+
   // Site name
 
   .siteName {
@@ -80,6 +93,19 @@
       @include fontSize(20);
       @include lineHeight(30);
     }
+  }
+
+  // Skills
+
+  .skills {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    &__container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
   }
 
 }
