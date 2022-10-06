@@ -1,4 +1,4 @@
-@media (max-width: breakpoint(lg) ) {
+@media (max-width: breakpoint(lg)) {
 
   // Variables
 
@@ -28,20 +28,6 @@
   .siteName {
     @include fontSize(30);
     @include lineHeight(45);
-  }
-
-  // Header
-
-  .header {
-    padding-top: 31px;
-    padding-bottom: 31px;
-
-    &__nav {
-      width: 46vmin;
-
-      @include fontSize(16);
-      @include lineHeight(24);
-    }
   }
 
   // Button
@@ -78,6 +64,19 @@
     }
   }
 
+  // Header
+
+  .header {
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &__nav {
+      width: 46vmin;
+
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+  }
 
   // Hero
 
@@ -340,5 +339,36 @@
       padding-left: 3px;
     }
   }
+}
 
+@media (max-width: breakpoint(md)) {
+  // Variables
+
+  $containerWidth: 690px;
+
+  // Container
+
+  .container {
+    max-width: calc($containerWidth + $containerPaddings * 2);
+  }
+
+  // Header
+
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__nav {
+      display: none;
+    }
+
+    & .btnHeader {
+      display: none;
+    }
+
+    & .hamburgerMenu {
+      display: block;
+    }
+  }
+  
 }

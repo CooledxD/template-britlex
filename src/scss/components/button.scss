@@ -14,6 +14,16 @@
     @include fontSize(24);
     @include lineHeight(70);
   }
+
+  &HamburgerMenu {
+    height: 60px;
+    width: 210px;
+  
+    border-width: 2px;
+
+    @include fontSize(18);
+    @include lineHeight(27);
+  }
   
   &Hero {
     height: 118px;
