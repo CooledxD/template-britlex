@@ -344,6 +344,20 @@
 }
 
 @media (max-width: breakpoint(md)) {
+
+  // Base
+
+  h1,
+  h2,
+  h3 {
+    @include fontSize(30);
+  }
+
+  p {
+    @include fontSize(14);
+    @include lineHeight(21);
+  }
+
   // Variables
 
   $containerWidth: 690px;
@@ -367,8 +381,11 @@
     }
 
     &Skills {
-      width: 196px;
-      height: 57px;
+      width: 178px;
+      height: 50px;
+
+      @include fontSize(16);
+      @include lineHeight(24);
     }
 
     &Sub {
@@ -423,6 +440,102 @@
       @include fontSize(16);
       @include lineHeight(24);
     }
+  }
+
+  // Skills
+
+  .skills {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__container {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__itemTitle {
+      @include fontSize(20);
+      @include lineHeight(30);
+    }
+
+    &__itemParagraph {
+      max-width: 192px;
+    }
+
+    &__item {
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-bottom: 10px;
+
+      &:nth-child(1) {
+        grid-row-end: span 3;
+
+        padding-top: 247px;
+
+        background-position: top 11% left 64%;
+        background-size: 193px 170px;
+
+        & .skills__itemTitle{
+          padding-bottom: 37px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 66px;
+        }
+      }
+
+      &:nth-child(2) {
+        grid-row-end: span 2;
+        
+        padding-top: 201px;
+
+        background-position: top 14% left 20%;
+        background-size: 185px 160px;
+
+        & .skills__itemTitle {
+          padding-bottom: 6px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 33px;
+        }
+      }
+
+      &:nth-child(3) {
+        grid-row-end: span 2;
+
+        padding-top: 201px;
+
+        background-position: top 13% left 25%;
+        background-size: 165px 130px;
+
+        & .skills__itemTitle {
+          padding-bottom: 6px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 33px;
+        }
+      }
+
+      &:nth-child(4) {
+        grid-row-end: span 1;
+
+        padding-top: 11px;
+
+        background-position: bottom 34% right 3%;
+        background-size: 180px 115px;
+        
+        & .skills__itemTitle {
+          padding-bottom: 5px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 14px;
+        }
+      }
+    }
+
   }
   
 }
