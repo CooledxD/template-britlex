@@ -389,11 +389,11 @@
     }
 
     &Sub {
-      height: 60px;
-      width: 193px;
+      height: 50px;
+      width: 145px;
   
-      @include fontSize(16);
-      @include lineHeight(24);
+      @include fontSize(13);
+      @include lineHeight(20);
     }
   }
 
@@ -611,6 +611,44 @@
         padding-bottom: 42px;
       }
     }
+  }
 
+  // Contact us
+
+  .contactUs {
+    padding-top: 67px;
+    padding-bottom: 194px;
+
+    background-position: top 34% left 2%;
+    background-size: 223px 195px;
+
+    &__container {
+      grid-column-start: 5;
+      grid-column-end: span 8;
+    }
+
+    &__paragraph {
+      padding-top: 0;
+      padding-bottom: 15px;
+  
+      max-width: 390px;
+    }
+  }
+
+  // Form subscribe
+
+  .formSub {
+
+    &__input {
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 283px;
+      margin-right: 2px;
+  
+      @include fontSize(12);
+      @include lineHeight(18);
+    }
   }
 }
