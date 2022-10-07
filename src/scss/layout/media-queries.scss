@@ -539,6 +539,33 @@
 
   // About us
 
+  .aboutUs {
+    padding-top: 40px;
+    padding-bottom: 87px;
+
+    background-position: right 3% top 38%;
+    background-size: 285px 256px;
+
+    &__paragraph {
+      padding-top: 0;
+      padding-bottom: 29px;
+
+      max-width: 325px;
+    }
+
+    &__itemStatistics {
+      padding-bottom: 10px;
   
+      @include fontSize(22);
+      @include lineHeight(30);
+    }
+  
+    &__itemStatisticsText {
+      @include fontSize(13);
+      @include lineHeight(20);
+    }
+  }
+
+  // Pricing
   
 }
