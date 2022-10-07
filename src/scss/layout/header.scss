@@ -51,21 +51,6 @@
     width: 70%;
   }
 
-  &__toggle:checked + .hamburgerMenu__btn .hamburgerMenu__btnItem {
-    background: transparent;
-  }
-
-  &__toggle:checked + .hamburgerMenu__btn .hamburgerMenu__btnItem::before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  &__toggle:checked + .hamburgerMenu__btn .hamburgerMenu__btnItem::after {
-    top: 0;
-    width: 100%;
-    transform: rotate(-45deg);
-  }
-
   &__toggle:checked ~ .hamburgerMenu__navbar {
     left: 0;
   }
