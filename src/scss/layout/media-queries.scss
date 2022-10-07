@@ -584,8 +584,8 @@
     }
 
     &__item:nth-child(1) {
-      background-position: left 25% top;
-      background-size: 204px 204px;
+      background-position: left 20% top 2%;
+      background-size: 180px 185px;
   
       & .pricing__itemParagraph {
         padding-bottom: 23px;
@@ -594,7 +594,7 @@
 
     &__item:nth-child(2) {
       background-position: left 7% top 13%;
-      background-size: 260px 165px;
+      background-size: 215px 145px;
 
       & .pricing__itemParagraph {
         padding-top: 44px;
@@ -603,8 +603,8 @@
     }
 
     &__item:nth-child(3) {
-      background-position: left 36% top;
-      background-size: 230px 205px;
+      background-position: left 50% top 3%;
+      background-size: 200px 178px;
 
       & .pricing__itemParagraph {
         padding-top: 44px;
