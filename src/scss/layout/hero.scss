@@ -8,6 +8,8 @@
   background-position: right 4% bottom 38%;
 
   &__container {
+    grid-column-end: span 5;
+
     background-image: url(../../img/hero/light-bulb.svg);
     background-position: top 20% right;
   }

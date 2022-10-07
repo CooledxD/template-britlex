@@ -88,8 +88,10 @@
     background-position: right 3% bottom 36%;
 
     &__container {
+      grid-column-end: span 6;
+
       background-size: 80px 80px;
-      background-position: top 25% right -4%;
+      background-position: top 25% right 19%;
     }
 
     &__title {
@@ -100,7 +102,7 @@
     &__paragraph {
       padding-top: 24px;
       padding-bottom: 32px;
-      margin-right: -50px;
+      max-width: 420px;
 
       @include fontSize(20);
       @include lineHeight(30);
@@ -352,6 +354,32 @@
     max-width: calc($containerWidth + $containerPaddings * 2);
   }
 
+  // Button
+
+  .btn {
+
+    &Hero {
+      width: 236px;
+      height: 65px;
+
+      @include fontSize(18);
+      @include lineHeight(27);
+    }
+
+    &Skills {
+      width: 196px;
+      height: 57px;
+    }
+
+    &Sub {
+      height: 60px;
+      width: 193px;
+  
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+  }
+
   // Header
 
   .header {
@@ -368,6 +396,32 @@
 
     & .hamburgerMenu {
       display: block;
+    }
+  }
+
+  // Hero
+
+  .hero {
+
+    background-size: 330px 260px;
+    background-position: right bottom 51%;
+
+    &__container {
+      background-size: 70px 70px;
+      background-position: top 25% right 16%;
+    }
+
+    &__title {
+      @include fontSize(36);
+      @include lineHeight(45);
+    }
+
+    &__paragraph {
+      max-width: 335px;
+      margin-right: -5px;
+
+      @include fontSize(16);
+      @include lineHeight(24);
     }
   }
   
