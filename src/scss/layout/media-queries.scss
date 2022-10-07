@@ -653,17 +653,17 @@
   }
 
   .footer {
-    padding-top: 24px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 13px;
 
     &__nav {
-      @include fontSize(16);
-      @include lineHeight(24);
+      @include fontSize(13);
+      @include lineHeight(20);
     }
 
     &__navItem:nth-child(2n) {
-      padding-right: 3px;
-      padding-left: 3px;
+      padding-right: 2px;
+      padding-left: 2px;
     }
   }
 }
