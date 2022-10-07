@@ -617,9 +617,9 @@
 
   .contactUs {
     padding-top: 67px;
-    padding-bottom: 194px;
+    padding-bottom: 141px;
 
-    background-position: top 34% left 2%;
+    background-position: top 43% left 2%;
     background-size: 223px 195px;
 
     &__container {
@@ -649,6 +649,21 @@
   
       @include fontSize(12);
       @include lineHeight(18);
+    }
+  }
+
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 22px;
+
+    &__nav {
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+
+    &__navItem:nth-child(2n) {
+      padding-right: 3px;
+      padding-left: 3px;
     }
   }
 }
