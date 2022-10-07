@@ -10,6 +10,8 @@
   }
 
   &__itemTitle {
+    white-space: normal;
+
     @include fontSize(30);
     @include lineHeight(48);
   }

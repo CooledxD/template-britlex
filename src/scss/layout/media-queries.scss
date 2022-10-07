@@ -568,4 +568,49 @@
 
   // Pricing
   
+  .pricing {
+
+    &__item {
+      padding-top: 220px;
+    }
+
+    &__itemTitle {
+      @include fontSize(20);
+      @include lineHeight(28);
+    }
+
+    &__itemPrice {
+      @include fontSize(22);
+    }
+
+    &__item:nth-child(1) {
+      background-position: left 25% top;
+      background-size: 204px 204px;
+  
+      & .pricing__itemParagraph {
+        padding-bottom: 23px;
+      }
+    }
+
+    &__item:nth-child(2) {
+      background-position: left 7% top 13%;
+      background-size: 260px 165px;
+
+      & .pricing__itemParagraph {
+        padding-top: 44px;
+        padding-bottom: 42px;
+      }
+    }
+
+    &__item:nth-child(3) {
+      background-position: left 36% top;
+      background-size: 230px 205px;
+
+      & .pricing__itemParagraph {
+        padding-top: 44px;
+        padding-bottom: 42px;
+      }
+    }
+
+  }
 }
