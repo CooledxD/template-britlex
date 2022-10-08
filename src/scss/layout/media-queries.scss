@@ -651,6 +651,8 @@
     }
   }
 
+  // Footer
+
   .footer {
     padding-top: 20px;
     padding-bottom: 13px;
@@ -714,11 +716,11 @@
     }
 
     &Sub {
-      height: 50px;
-      width: 145px;
+      height: 60px;
+      width: 193px;
   
-      @include fontSize(13);
-      @include lineHeight(20);
+      @include fontSize(16);
+      @include lineHeight(24);
     }
   }
 
@@ -966,6 +968,51 @@
         padding-top: 23px;
         padding-bottom: 31px;
       }
+    }
+  }
+
+  // Contact us
+
+  .contactUs {
+    padding-top: 155px;
+    padding-bottom: 144px;
+
+    background-position: top 44.5% left 50%;
+    background-size: 340px 300px;
+
+    &__container {
+      grid-column-end: span 6;
+      grid-column-start: auto;
+
+      text-align: center;
+    }
+
+    &__paragraph {
+      padding-top: 439px;
+      padding-bottom: 58px;
+
+      @include fontSize(16);
+      @include lineHeight(24);
+  
+      max-width: none;
+    }
+  }
+
+  // Form subscribe
+
+  .formSub {
+
+    &__input {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      width: 311px;
+      margin-right: 2px;
+      text-align: left;
+  
+      @include fontSize(13);
+      @include lineHeight(20);
     }
   }
 
