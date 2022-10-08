@@ -430,6 +430,7 @@
     &__title {
       @include fontSize(36);
       @include lineHeight(45);
+      max-width: 191px;
     }
 
     &__paragraph {
@@ -749,6 +750,7 @@
     &__title {
       @include fontSize(34);
       @include lineHeight(45);
+      max-width: none;
     }
 
     &__paragraph {
@@ -1032,5 +1034,72 @@
       padding-left: 3px;
     }
   }
+}
 
+@media (max-width: breakpoint(xs)) {
+  // Variables
+
+  $containerWidth: 290px;
+  $templateColumns: 2;
+
+  // Container
+
+  .container {
+    max-width: calc($containerWidth + $containerPaddings * 2);
+  }
+
+  // Grid
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat($templateColumns, minmax(0, 1fr));
+    gap: $gap;
+  }
+
+  // Navbar
+
+  .navbar {
+    grid-column-end: span 2;
+  }
+
+  // Button
+
+  .btn {
+
+    &Hero {
+      width: 305px;
+      height: 75px;
+
+      @include fontSize(18);
+      @include lineHeight(27);
+    }
+
+    &Skills {
+      width: 200px;
+
+      @include fontSize(14);
+      @include lineHeight(21);
+    }
+
+    &Sub {
+      height: 60px;
+      width: 193px;
+  
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+  }
+
+  // Header
+
+  .hamburgerMenu {
+
+    &__btn {
+      right: 19px;
+    }
+  }
+
+  // Hero
+
+  
 }

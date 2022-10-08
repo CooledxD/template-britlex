@@ -16,6 +16,8 @@
 
   &__title {
     @include fontSize(64);
+    max-width: 338px;
+    white-space: normal;
   }
 
   &__paragraph {
