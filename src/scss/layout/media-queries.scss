@@ -419,7 +419,6 @@
   // Hero
 
   .hero {
-
     background-size: 330px 260px;
     background-position: right bottom 51%;
 
@@ -666,4 +665,98 @@
       padding-left: 2px;
     }
   }
+}
+
+@media (max-width: breakpoint(sm)) {
+
+  // Variables
+
+  $containerWidth: 510px;
+  $templateColumns: 6;
+
+  // Container
+
+  .container {
+    max-width: calc($containerWidth + $containerPaddings * 2);
+  }
+
+  // Grid
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat($templateColumns, minmax(0, 1fr));
+    gap: $gap;
+  }
+  
+  // Navbar
+
+  .navbar {
+    grid-column-end: span 6;
+  }
+
+  // Button
+  
+  .btn {
+
+    &Hero {
+      width: 305px;
+      height: 75px;
+
+      @include fontSize(18);
+      @include lineHeight(27);
+    }
+
+    &Skills {
+      width: 178px;
+      height: 50px;
+
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+
+    &Sub {
+      height: 50px;
+      width: 145px;
+  
+      @include fontSize(13);
+      @include lineHeight(20);
+    }
+  }
+
+  // Header
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  // Hero
+
+  .hero {
+    padding-top: 429px;
+
+    background-size: 400px 315px;
+    background-position: left 50% top 15%;
+
+    &__container {
+      grid-column-end: span 6;
+      text-align: center;
+
+      background-image: none;
+    }
+
+    &__title {
+      @include fontSize(34);
+      @include lineHeight(45);
+    }
+
+    &__paragraph {
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 37px;
+
+      max-width: 500px;
+    }
+  }
+
 }
