@@ -1037,6 +1037,20 @@
 }
 
 @media (max-width: breakpoint(xs)) {
+
+  // Base
+
+  h1,
+  h2,
+  h3 {
+    @include fontSize(24);
+  }
+
+  p {
+    @include fontSize(13);
+    @include lineHeight(20);
+  }
+
   // Variables
 
   $containerWidth: 290px;
@@ -1067,11 +1081,11 @@
   .btn {
 
     &Hero {
-      width: 305px;
-      height: 75px;
+      width: 290px;
+      height: 60px;
 
-      @include fontSize(18);
-      @include lineHeight(27);
+      @include fontSize(16);
+      @include lineHeight(24);
     }
 
     &Skills {
@@ -1100,6 +1114,33 @@
   }
 
   // Hero
+
+  .hero {
+    padding-top: 308px;
+
+    background-size: 275px 220px;
+    background-position: left 50% top 12%;
+
+    &__container {
+      grid-column-end: span 2;
+    }
+
+    &__title {
+      @include fontSize(24);
+      @include lineHeight(36);
+    }
+
+    &__paragraph {
+      @include fontSize(14);
+      @include lineHeight(21);
+      max-width: none;
+
+      padding-top: 20px;
+      padding-bottom: 13px;
+    }
+  }
+
+  // Skills
 
   
 }
