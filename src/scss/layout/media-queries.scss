@@ -1016,4 +1016,21 @@
     }
   }
 
+  // Footer
+
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &__nav {
+      @include fontSize(12);
+      @include lineHeight(18);
+    }
+
+    &__navItem:nth-child(2n) {
+      padding-right: 3px;
+      padding-left: 3px;
+    }
+  }
+
 }
