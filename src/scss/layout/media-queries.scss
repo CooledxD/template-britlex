@@ -864,6 +864,44 @@
     }
   }
 
-  
+  // About us
+
+  .aboutUs {
+    padding-top: 38px;
+    padding-bottom: 132px;
+
+    background-position: right 48% top 29%;
+    background-size: 335px 308px;
+
+    &__container {
+      grid-column-end: span 6;
+
+      text-align: center;
+    }
+
+    &__paragraph {
+      padding-top: 399px;
+      padding-bottom: 42px;
+
+      max-width: none;
+    }
+
+    &__Statistics {
+      max-width: 400px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__itemStatistics {
+      @include fontSize(24);
+      @include lineHeight(30);
+    }
+
+    &__itemStatisticsText {
+      @include fontSize(14);
+      @include lineHeight(21);
+    }
+  }
 
 }
