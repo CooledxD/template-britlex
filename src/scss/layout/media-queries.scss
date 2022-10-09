@@ -416,6 +416,8 @@
     }
   }
 
+
+
   // Hero
 
   .hero {
@@ -701,6 +703,14 @@
   
   .btn {
 
+    &HamburgerMenu {
+      height: 70px;
+      width: 330px;
+  
+      @include fontSize(22);
+      @include lineHeight(33);
+    }
+
     &Hero {
       width: 305px;
       height: 75px;
@@ -759,6 +769,31 @@
       padding-bottom: 37px;
 
       max-width: 500px;
+    }
+  }
+
+  .hamburgerMenu {
+
+    &__navbar {
+      padding-top: 50px;
+      width: 100%;
+    }
+
+    &__navbar::after {
+      width: 0;
+    }
+
+    &__nav {
+      margin-top: 42px;
+      padding-bottom: 80px;
+
+      @include fontSize(24);
+      @include lineHeight(65);
+    }
+
+    &__close {
+      top: 70px;
+      right: 30px;
     }
   }
 
@@ -1080,6 +1115,14 @@
 
   .btn {
 
+    &HamburgerMenu {
+      height: 65px;
+      width: 291px;
+  
+      @include fontSize(20);
+      @include lineHeight(30);
+    }
+
     &Hero {
       width: 290px;
       height: 60px;
@@ -1109,6 +1152,26 @@
 
     &__btn {
       right: 19px;
+    }
+
+    &__navbar {
+      padding-top: 22px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__nav {
+      margin-top: 14px;
+      padding-top: 50px;
+      padding-bottom: 67px;
+
+      @include fontSize(22);
+      @include lineHeight(65);
+    }
+
+    &__close {
+      top: 40px;
+      right: 10px;
     }
   }
 
