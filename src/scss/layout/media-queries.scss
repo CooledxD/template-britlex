@@ -1096,11 +1096,10 @@
     }
 
     &Sub {
-      height: 60px;
-      width: 193px;
+      width: 290px;
   
-      @include fontSize(16);
-      @include lineHeight(24);
+      @include fontSize(14);
+      @include lineHeight(21);
     }
   }
 
@@ -1330,6 +1329,63 @@
 
   // Contact us
 
+  .contactUs {
+    padding-top: 70px;
+    padding-bottom: 57px;
+
+    background-position: top 35% left 55%;
+    background-size: 240px 210px;
+
+    &__container {
+      grid-column-end: span 2;
+    }
+
+    &__paragraph {
+      padding-top: 305px;
+      padding-bottom: 30px;
+
+      @include fontSize(14);
+      @include lineHeight(21);
+    }
+  }
+
+  // Form subscribe
+
+  .formSub {
+
+    &__input {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 290px;
+      margin-right: 0;
+      margin-bottom: 15px;
   
+      @include fontSize(12);
+      @include lineHeight(18);
+    }
+  }
+
+  // Footer
+
+  .footer {
+    padding-top: 27px;
+    padding-bottom: 52px;
+
+    &__navbar {
+      grid-auto-flow: row;
+      grid-column-end: span 2;
+      justify-content: center;
+    }
+
+    &__nav {
+      @include fontSize(10);
+      @include lineHeight(15);
+    }
+
+    &__navItem:nth-child(2n) {
+      padding-right: 3px;
+      padding-left: 3px;
+    }
+  }
 
 }
