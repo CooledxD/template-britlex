@@ -1089,7 +1089,7 @@
     }
 
     &Skills {
-      width: 200px;
+      width: 178px;
 
       @include fontSize(14);
       @include lineHeight(21);
@@ -1141,6 +1141,90 @@
   }
 
   // Skills
+
+  .skills {
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &__title {
+      grid-column-end: span 2;
+    }
+
+    &__container {
+      grid-column-end: span 2;
+
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    &__item {
+      grid-column-end: span 2;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &:nth-child(1) {
+        padding-top: 255px;
+
+        background-position: top 7% left 50%;
+        background-size: 190px 170px;
+
+        & .skills__itemTitle{
+          padding-bottom: 10px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 38px;
+        }
+      }
+
+      &:nth-child(2) {
+        padding-top: 255px;
+
+        background-position: top 12% left 50%;
+        background-size: 185px 160px;
+
+        & .skills__itemTitle {
+          padding-bottom: 12px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 10px;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 232px;
+
+        background-position: top 10% left 50%;
+        background-size: 180px 145px;
+
+        & .skills__itemTitle {
+          padding-bottom: 8px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 37px;
+        }
+      }
+
+      &:nth-child(4) {
+        padding-top: 232px;
+
+        background-position: left 47% top 12%;
+        background-size: 205px 130px;
+        
+        & .skills__itemTitle {
+          padding-bottom: 8px;
+        }
+
+        & .skills__itemParagraph {
+          padding-bottom: 57px;
+        }
+      }
+    }
+  }
+
+  // About us
 
   
 }
