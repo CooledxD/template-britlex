@@ -1,18 +1,15 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 
-let mode = 'development'
-if (process.env.NODE_ENV === 'production') {
-  mode = 'production'
-}
+const mode = process.env.NODE_ENV || 'development'
 
 module.exports = {
   mode: mode,
 
   entry: {
-    main: './src/main.js'
+    main: path.resolve(__dirname, 'src', 'main.js')
   },
 
   devtool: 'source-map',
@@ -28,7 +25,7 @@ module.exports = {
     hot: true,
     open: true,
     static: {
-      directory: path.resolve(__dirname, './src'),
+      directory: path.resolve(__dirname, 'src'),
       watch: true
     }
   },
@@ -44,7 +41,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/layout/pages/index.hbs',
+      template: path.resolve(__dirname, 'src/layout/pages', 'index.hbs'),
       inject: 'body'
     }),
     new MiniCssExtractPlugin({
@@ -60,11 +57,17 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g|gif|webp|ico)$/i,
-        type: 'asset'
+        type: 'asset',
+        generator: {
+          filename: 'img/[name].[contenthash][ext]'
+        }
       },
       {
         test: /\.woff2$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name].[contenthash][ext]'
+        }
       },
       {
         test: /\.html$/i,

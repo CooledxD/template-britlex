@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=development&&webpack serve",
-    "dev": "set NODE_ENV=development&&webpack",
-    "build": "set NODE_ENV=production&&webpack",
+    "start": "webpack serve",
+    "dev": "webpack",
+    "build": "webpack --node-env=production",
     "clean": "rd /s /q dist"
   },
   "repository": {
@@ -23,7 +23,6 @@
     "node": "16.17.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.1.0",
     "handlebars": "^4.7.7",
